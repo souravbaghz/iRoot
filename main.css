@@ -1,0 +1,252 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(fira-mono-v8-latin-regular.woff);
+ }
+
+
+/*Testing this style*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&amp;display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  background-color: black;
+  font-family: "myFirstFont" ;
+}
+nav{
+  background: black;
+  height: 90px;
+  width: 100%;
+}
+label.logo{
+  color: #f2f2f2;
+  font-size: 33px;
+  line-height: 80px;
+  padding: 0 140px;
+  font-weight: 600;
+  font-family: "myFirstFont";
+}
+nav ul{
+  float: right;
+  margin-right: 60px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 2px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  /* text-transform: uppercase; */
+  font-family: "myFirstFont";
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 1178px){
+  .checkbtn{
+    display: block;
+    margin-right: 40px;
+  }
+
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #000000fa;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  background: url(bg1.html) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+
+/*Home Container*/
+.mainContainer, .subCont{
+    width: 70%;
+    margin:20px auto;
+}
+.terminallook > article{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    overflow: hidden;
+    color: white !important;
+    border: 1.5px solid white;
+    font-size: 18px;
+}
+.terminallook >article> p{
+    color: white;
+    padding:10px;
+}
+.whoami{
+    color: white;
+    padding:10px;
+    width: 70%;
+    font-size: 1em;
+    line-height: 1.4;
+}
+.terminallook >article >h4{
+    background-color: white;
+    height: 30px;
+    color: #000;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.terminallook > article >h4>span{
+    background-color: white;
+}
+.incontento1{
+    display: flex;
+}
+.mainFooter{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width:100%;
+    text-align: center;
+    font-size: 12px;
+    border-top: 1.5px solid #ff6600;
+}
+.content2{
+    color: white;
+    margin: 100px auto;
+}
+@media (max-width:768px){
+    .mainContainer,.subCont{
+        width: 80%;
+    }
+    .subCont >div{
+      width: 38% !important;
+    }
+}
+@media (max-width:500px){
+    .mainContainer,.subCont{
+        width: 90%;
+    }
+    .incontento1{
+        display: block;
+        text-align: center;
+    }
+    .incontento1 > img{
+        width: 60%;
+        margin: 0 auto;
+        height: auto;
+    }
+    .terminallook > article{
+        font-size: 13px;
+    }
+    .terminallook >article> p{
+        padding:10px;
+    }
+    .whoami{
+        padding:5px;
+        width: 100%;
+        text-align: justify;
+    }
+    .terminallook >article >h4{
+        height: 40px;
+        font-size: 20px;
+        padding-top: 5px;
+        padding-right: 15px;
+    }
+    .terminallook > article >h4>span{
+        background-color: white;
+    }
+    .logo{
+        padding: 15px !important;
+    }
+    .typewriter {
+        width: 60%;
+    }
+    .subCont >div{
+      width: 48.5% !important;
+    }
+    @media (max-width:400px){
+
+    }
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 60% }
+      }
+
+
+}
+@media(max-width:618px){
+    .logo{
+        padding: 0 40px !important;
+    }
+}
+@media (max-width:400px){
+    .logo{
+        font-size: 30px !important;
+        padding: 10px !important;
+    }
+    .typewriter{
+      font-size: 15px !important;
+      width: 86%;
+    }
+    .typewriter > span{
+        font-size: 15px !important;
+    }
+     .subCont >div{
+        width: 69.5% !important;
+      }
+}
+
+.orange{
+  color: orangered !important;
+}
+.blue{
+  color:  #00aeff !important;
+}

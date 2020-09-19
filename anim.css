@@ -1,0 +1,74 @@
+.blinkme{
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-duration: 0.6s;
+    font-weight: 900;
+}
+.blinkme3{
+    animation-name: blink3;
+    animation-iteration-count: infinite;
+    animation-duration: 0.8s;
+    font-weight: 900;
+    color:  red;
+}
+@keyframes blink3{
+    0%{opacity: 0.8;}
+    50%{opacity: 0.6;}
+    100%{opacity: 0.8;}
+}
+@keyframes blink{
+    0%{color: orange;}
+    100%{color:transparent;}
+}
+
+.typewriter {
+    width: 30%;
+    display: block;
+    font-size: 14pt;
+    color: white;
+    font-family: myFirstFont;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin:0; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .13em; /* Adjust as needed */
+    animation:
+      typing 1.5s steps(30, end);
+      
+  }
+  .typewriter2 h1 {
+    width: 100%;
+    display: block;
+    font-size: 14pt;
+    color: #fff;
+    font-family: myFirstFont;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin:0; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .11em; /* Adjust as needed */
+    animation:
+      typing2 1.5s steps(30, end),
+      blink-caret2 .5s step-end infinite;
+  }
+  
+  .blinkme2{
+      animation: blink-caret .5s step-end infinite;
+  }
+  /* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 30% }
+  }
+  @keyframes typing2 {
+    from { width: 0 }
+    to { width: 40% }
+  }
+  @keyframes blink-caret2 {
+    from, to {border-right-color: transparent }
+    50% { border-right-color: orange }
+  }
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to {color: transparent }
+    50% { color: orange }
+  }
