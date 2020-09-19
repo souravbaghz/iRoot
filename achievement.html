@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ 
+<head>
+    <meta charset="utf-8">
+    <title>achievement@iRoot</title>
+    <link rel="stylesheet" text="type/css" href="anim.css"/>
+    <link rel="stylesheet" text="type/css" href="main.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+
+    <script type="text/javascript">function change(id, todo){
+  if(todo.toLowerCase() === "over"){
+    var toChange = document.getElementById(id);
+    toChange.style="color: #00aeff";
+  }else{
+    var toChange = document.getElementById(id);
+    toChange.style="color: #FFFFFF";
+  }
+}</script>
+
+    <nav style="border-bottom: 2px solid #008037;">
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Achievement<span style="color: #00aeff;"></span></label>
+      <ul>
+        <li><a href="index1.html" id="home" onmouseover="change('home','over')" onmouseout="change('home','out')">[Home]</a></li>
+        <li><a href="Achievement.html" class="active" id="article"  style="color: orangered !important;" >[Achievement]</a></li>
+       </ul>
+    </nav>
+    <div class="mainContainer">
+        <div class="terminallook">
+            <article>
+                <h4>[~]achievement<span style="color: #008037;"></span> <span style="float: right; width: 4.5%;font-size: 14 px;">✖</span></h4>
+                <p>
+                <span class="typewriter" style="font-size: 25px;">$ <span style="color: red !important; font-size: 25px;; font-weight: 900;">iRoot</span><span class="blinkme2">_</span></span>
+                <div class="incontento1">
+                    <p class="whoami">
+					> 2020<br><br>
+                       <span style="color: orangered !important;"> [01 May] </span> - <a id = "1" style="color: white;" onmouseover="change('1','over')" onmouseout="change('1','out')"href="https://www.instagram.com/_iroot/"> Idustrial Product Design BootCamp</i></a><br>
+					   <span style="color: orangered !important;"> [23-25 Feb] </span> - <a id = "2" style="color: white;" onmouseover="change('2','over')" onmouseout="change('2','out')"href="https://www.instagram.com/_iroot/"> ISRO Exhibition </a><br>
+					   <span style="color: orangered !important;"> [01 July] </span> - <a id = "3" style="color: white;" onmouseover="change('3','over')" onmouseout="change('3','out')"href="https://www.instagram.com/_iroot/"> </a><br><br><br><br>				   <!--Only use double br for the last child-->
+                    </p>
+                </p>
+            </article>
+        </div>
+    </div>
+<footer class="mainFooter">
+        <p style="color: white;">Made with <span class="blinkme3"></span>By <a id = "footer" style="color: white;" onmouseover="change('footer','over')" onmouseout="change('footer','out')" href="https://www.instagram.com/_iroot/"> iRoot </a> </br>
+    </footer>
+  </body>
+  <script src="../kit.fontawesome.com/a076d05399.js"></script>
+
+</html>
