@@ -116,7 +116,7 @@ section{
     width: 70%;
     margin:20px auto;
 }
-.terminallook > article{
+.terminallook > achievement{
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     overflow: hidden;
@@ -124,7 +124,7 @@ section{
     border: 1.5px solid white;
     font-size: 18px;
 }
-.terminallook >article> p{
+.terminallook >achievement> p{
     color: white;
     padding:10px;
 }
@@ -135,7 +135,7 @@ section{
     font-size: 1em;
     line-height: 1.4;
 }
-.terminallook >article >h4{
+.terminallook >achievement >h4{
     background-color: white;
     height: 30px;
     color: #000;
@@ -143,7 +143,7 @@ section{
     padding-left: 5px;
     padding-right: 5px;
 }
-.terminallook > article >h4>span{
+.terminallook > achievement >h4>span{
     background-color: white;
 }
 .incontento1{
